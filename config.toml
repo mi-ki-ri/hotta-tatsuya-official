@@ -3,3 +3,4 @@ languageCode = "en-us"
 title = "HOTTA Tatsuya Official Site"
 publishDir = "docs"
 theme = "hotta-tatsuya-official-theme"
+Paginate = 3
