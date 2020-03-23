@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ partial "head" . }}
-    <title>Test</title>
+    <title>{{ .Title }} -- {{ .Site.Title }}</title>
 </head>
 <body>
     {{ partial "header" . }}
-    test
+    {{ template "_internal/pagination.html" . }}
+    {{ range .Paginator.Pages }}
+        {{ .Title }}
+    {{ end }}
     {{ partial "footer" . }}
 </body>
 </html>
