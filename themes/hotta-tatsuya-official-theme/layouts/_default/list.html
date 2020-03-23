@@ -8,10 +8,13 @@
 </head>
 <body>
     {{ partial "header" . }}
-    {{ template "_internal/pagination.html" . }}
+    
     {{ range .Paginator.Pages }}
         {{ .Title }}
     {{ end }}
+
+    {{ template "_internal/pagination.html" . }}
+    
     {{ partial "footer" . }}
 </body>
 </html>

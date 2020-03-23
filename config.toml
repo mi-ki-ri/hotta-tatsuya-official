@@ -1,6 +1,6 @@
-baseURL = ""
+baseURL = "https://mi-ki-ri.github.io/hotta-tatsuya-official/"
 languageCode = "en-us"
 title = "HOTTA Tatsuya Official Site"
 publishDir = "docs"
 theme = "hotta-tatsuya-official-theme"
-Paginate = 3
+Paginate = 25
